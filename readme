@@ -1,0 +1,70 @@
+Scalping Strategy – High-Frequency Trading Guide
+
+Descrição:
+Este repositório contém um guia detalhado para a implementação de uma estratégia de scalping baseada em conceitos técnicos validados e testados no mercado. A estratégia segue princípios de entrada rápida, rompimento de níveis-chave e execução de operações curtas, utilizando dois setups principais:
+
+5-Minute Opening Range Breakout (ORBO): Baseado nos primeiros 5 minutos do pregão, com identificação de níveis de suporte e resistência iniciais.
+Previous Day High/Low (PDH/PDL): Foca no rompimento e reteste das máximas e mínimas do dia anterior.
+O repositório fornece todos os critérios técnicos necessários para a aplicação manual ou automatizada dessa estratégia.
+
+📌 Estruturas de Estratégia
+
+1. 5-Minute Opening Range Breakout (ORBO)
+✅ Timeframe: 1M (1 Minuto)
+✅ Janela de análise: Primeiros 5 minutos do pregão (9:30 - 9:35 AM ET)
+✅ Níveis calculados:
+
+Máxima das 5 primeiras velas de 1M = Limiar superior
+Mínima das 5 primeiras velas de 1M = Limiar inferior
+📌 Critérios de Entrada:
+
+O preço precisa romper a máxima ou mínima da faixa de 5 minutos.
+Reteste obrigatório do nível rompido antes da entrada.
+Confirmação por volume e price action antes da execução.
+📌 Gerenciamento de Risco:
+
+Stop Loss: Abaixo/acima da vela de rompimento ou do nível de reteste.
+Take Profit:
+Meta mínima: Relação 2:1 risco/recompensa.
+Alternativa: Projeção baseada no ATR (volatilidade do ativo).
+📌 Palavras-chave técnicas:
+1-minute timeframe, 5-minute breakout, range trading, entry confirmation, volume analysis, candlestick patterns
+
+2. Previous Day High/Low (PDH/PDL)
+✅ Timeframe: 1M e 5M
+✅ Níveis calculados:
+
+Previous Day High (PDH) = Máxima do dia anterior
+Previous Day Low (PDL) = Mínima do dia anterior
+📌 Critérios de Entrada:
+
+O preço deve romper a máxima ou mínima do dia anterior.
+Reteste obrigatório do nível rompido.
+Confirmação por price action e volume antes da entrada.
+📌 Gerenciamento de Risco:
+
+Stop Loss: Abaixo/acima do reteste do nível rompido.
+Take Profit:
+Meta mínima: Relação 2:1 risco/recompensa.
+Alternativa: Definição com base em zonas de liquidez.
+📌 Palavras-chave técnicas:
+daily high, daily low, breakout retest, support and resistance levels, market structure, trend continuation
+
+🛠️ Implementação e Automação
+
+Este repositório contém materiais para uso manual e automatizado da estratégia. Para automação, seguir a seguinte estrutura:
+
+✅ Monitoramento Contínuo:
+
+Captura automática dos níveis ORBO e PDH/PDL.
+Detecção de rompimentos e retestes.
+✅ Execução de Ordens:
+
+Entrada automática baseada em confirmação de price action.
+Implementação de Stop Loss e Take Profit dinâmicos.
+✅ Filtros de Mercado:
+
+Avaliação de volume e liquidez em tempo real.
+Bloqueio de operações em consolidação para evitar falsos rompimentos.
+📌 Palavras-chave técnicas:
+automated trading, bot strategy, price action filters, scripted order execution, stop-loss automation, trade execution
